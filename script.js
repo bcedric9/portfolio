@@ -63,10 +63,9 @@ function initializeCarousel() {
 
 function updateCarousel() {
   const carousel = document.getElementById('carouselProjects');
-  const itemsPerView = getItemsPerView();
-  const itemWidth = 100 / itemsPerView;
-  const offset = -currentSlide * itemsPerView * itemWidth;
-  carousel.style.transform = `translateX(${offset}%)`;
+  const wrapper = document.querySelector('.carousel-wrapper');
+  const offset = wrapper.clientWidth * currentSlide;
+  carousel.style.transform = `translateX(-${offset}px)`;
   
   // Update dots
   const dots = document.querySelectorAll('.dot');

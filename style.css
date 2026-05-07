@@ -459,8 +459,7 @@ ol {
 }
 
 .carousel-item {
-    min-width: 45%;
-    flex-shrink: 0;
+    flex: 0 0 calc((100% - 30px) / 2);
     display: flex;
     justify-content: center;
 }
@@ -713,6 +712,7 @@ footer {
 
 /* Responsive Carousel */
 .carousel-item {
+    flex: 0 0 100%;
     min-width: 100%;
 }
 
