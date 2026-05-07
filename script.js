@@ -61,10 +61,20 @@ function initializeCarousel() {
   updateCarousel();
 }
 
+function getCarouselGap() {
+  const carousel = document.getElementById('carouselProjects');
+  const style = window.getComputedStyle(carousel);
+  return parseFloat(style.gap || style.columnGap || 0) || 0;
+}
+
 function updateCarousel() {
   const carousel = document.getElementById('carouselProjects');
-  const wrapper = document.querySelector('.carousel-wrapper');
-  const offset = wrapper.clientWidth * currentSlide;
+  const items = carousel.querySelectorAll('.carousel-item');
+  if (items.length === 0) return;
+  const itemsPerView = getItemsPerView();
+  const gap = getCarouselGap();
+  const itemWidth = items[0].getBoundingClientRect().width;
+  const offset = currentSlide * itemsPerView * (itemWidth + gap);
   carousel.style.transform = `translateX(-${offset}px)`;
   
   // Update dots
