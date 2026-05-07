@@ -91,7 +91,7 @@ button {
     font-family: fantasy;
     font-size: 2rem;
     color: transparent;
-    background-image: url('./image/ecran-noir-clair.jpg');
+    background-image: url('image/ecran-noir-clair.jpg');
     background-size: 150%;
     background-position: 0 50%;
     background-clip: text;
@@ -238,7 +238,7 @@ img {
 }
 
 .card_back {
-    background-image: url(./image/developpeur-web2.jpg);
+    background-image: url(image/developpeur-web2.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 400px;
@@ -249,7 +249,7 @@ img {
 }
 
 .card_front {
-    background-image: url(./image/photoprofil2.jpg);
+    background-image: url(image/photoprofil2.jpg);
     rotate: y 180deg;
     border-radius: 400px;
     box-shadow: 0px 0px 30px lightblue;
