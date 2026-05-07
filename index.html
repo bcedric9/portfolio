@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href=".\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <script src="C:\Users\Onyx_\Desktop\Développeur Web\Algorithmique\HTML\portfolio\script.js"></script>
+
+    <div id="button">
+        <button onclick="changeColor('#0f3460');">Mode sombre</button>
+    </div>
+
+    <header>
+        <div id="accueil">
+            <h1 class="prenom">Benaddache Cédric</h1>
+            <h3>Développeur Web et Web Mobile</h3>
+            <h4>Autonome, rigoureux et passionné, je suis à la recherche d'un poste de développeur web.</h4>
+        </div>
+        <nav>
+            <div class="burger" id="burger">
+                ☰
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#button">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#compétences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="card1">
+        <div class="card">
+            <div class="card_inner">
+                <div class="card_face card_back"></div>
+                <div class="card_face card_front"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="apropos">
+        <h1 id="titre">À propos</h1>
+        <div class="présentation">
+            <p>Issu d'un parcours littéraire, je me suis, d'abord, dirigé vers les métiers de la rédaction.</p>
+            <p>D'abord rédacteur web pendant quelques années, je me suis, ensuite, formé en tant que développeur web,
+                chez <em>ForEach Academy.</em></p>
+            <p>Une formation qui, je l'espère, me permettra d'évoluer professionnellement dans ce domaine. </p>
+        </div>
+    </div>
+    </div>
+    <div class="separateur"></div>
+    <div id="compétences">
+        <h1 id="titre">Compétences</h1>
+        <div class="techniques">
+            <ol>
+                <li><i class="fa-brands fa-html5 fa-xl" style="color: lightgrey;"></i> HTML
+                </li>
+                <li><i class="fa-brands fa-css3 fa-xl" style="color: lightgrey;"></i> CSS
+                </li>
+                <li><i class="fa-brands fa-java fa-xl" style="color: lightgrey;"></i> JavaScript
+                </li>
+                <li><i class="fa-brands fa-react fa-xl" style="color: lightgrey;"></i> React
+                </li>
+                <li><i class="fa-solid fa-globe fa-xl" style="color: lightgrey;"></i> Anglais
+                </li>
+            </ol>
+            <ol>
+                <li>Autonomie / </li>
+                <li>Adaptabilité / </li>
+                <li>Esprit d'équipe / </li>
+                <li>Organisation / </li>
+            </ol>
+        </div>
+    </div>
+    <div class="separateur"></div>
+    <div id="projets">
+        <h1 id="titre">Projets</h1>
+        <div class="carousel-container">
+            <button class="carousel-btn prev" id="prevBtn" onclick="previousProject()">❮</button>
+            
+            <div class="carousel-wrapper">
+                <div class="carousel" id="carouselProjects">
+                    <!-- Projet 1 -->
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <a href="https://bcedric9.github.io/menurestaurant/" target="_blank">
+                                <img src=".\image\Capture-restaurant.png" alt="Menu Restaurant">
+                            </a>
+                            <h3 class="project-title">Menu Restaurant</h3>
+                            <p class="project-description">Création d'un menu de restaurant en utilisant HTML, CSS et Flexbox</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 2 -->
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <a href="https://nico59710.github.io/TUSMO/" target="_blank">
+                                <img src=".\image\CaptureTUSMO.png" alt="Jeu TUSMO">
+                            </a>
+                            <h3 class="project-title">Jeu TUSMO</h3>
+                            <p class="project-description">Création d'un jeu MOTUS en utilisant HTML, CSS et JavaScript</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 3 -->
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <a href="https://bcedric9.github.io/pageinstagram/" target="_blank">
+                                <img src=".\image\CaptureInstagram.png" alt="Page Instagram">
+                            </a>
+                            <h3 class="project-title">Page Instagram</h3>
+                            <p class="project-description">Création d'une page Instagram en utilisant HTML, CSS et JavaScript</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 4 -->
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <a href="https://mcfourstrings.github.io/Flechettes/" target="_blank">
+                                <img src=".\image\CaptureFlechette.png" alt="Application Fléchettes">
+                            </a>
+                            <h3 class="project-title">Application Fléchettes</h3>
+                            <p class="project-description">Création d'une application de jeux de fléchettes avec React</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-btn next" id="nextBtn" onclick="nextProject()">❯</button>
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+    </div>
+    <div class="separateur"></div>
+    <div id="cv">
+        <h1 id="titre">CV</h1>
+        <div class="CV2">
+            <div></div>
+            <div class="image2"> <a href="https://bcedric9.github.io/CV2/" target="_blank"><img class="image3"
+                        src=".\image\CaptureCV.png" alt="cv"></a>
+            </div>
+            <div></div>
+        </div>
+    </div>
+    <div class="separateur"></div>
+    <div id="contact">
+        <h1 id="titre">Contact</h1>
+        <div id="informations">
+            <p><i class="fa-solid fa-envelope fa-xl" style="color: white;"></i> E-mail : <a class="lien"
+                    href="mailto:cedric.benaddache@gmail.com">cedric.benaddache@gmail.com</a></p>
+            <p><i class="fa-solid fa-phone fa-xl" style="color:white;"></i> Téléphone : <a class="lien"
+                    href="tel:0675344919">06
+                    75 34 49 19</a></p>
+            <p><i class="fa-brands fa-linkedin fa-xl" style="color: white;"></i> Réseaux : <a class="lien"
+                    href="https://www.linkedin.com/in/cedric-benaddache-070190229" target="_blank">Mon
+                    Linkedin</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+<footer> &copy; 2026 Benaddache Cédric. Tous droits réservés. </footer>
+
+</html>
